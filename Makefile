@@ -1,0 +1,7 @@
+CONTIKI_PROJECT = Embedded
+PROJECT_SOURCEFILES = routing.c
+all: $(CONTIKI_PROJECT)
+
+CONTIKI = ..
+MAKE_NET = MAKE_NET_NULLNET
+include $(CONTIKI)/Makefile.include
